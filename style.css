@@ -1,0 +1,75 @@
+body {
+    /* Deep dark gradient background */
+    background: linear-gradient(135deg, #0a0c0a 0%, #141a14 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    /* Dark container with a subtle lemon-green tinted border */
+    background: rgba(225, 8, 217, 0.9);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(204, 255, 0, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Container lifts and glows slightly on hover */
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(204, 255, 0, 0.05);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+input {
+    width: 85%;
+    padding: 12px 15px;
+    margin: 15px 0;
+    font-size: 16px;
+    background-color: #1e241e;
+    border: 2px solid #334033;
+    border-radius: 10px;
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input glows lemon green on focus */
+input:focus {
+    border-color: #ccff00;
+    background-color: #253025;
+    box-shadow: 0 0 12px rgba(204, 255, 0, 0.3);
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    /* High-intensity lemon green gradient */
+    background: linear-gradient(135deg, #ccff00 0%, #a3cc00 100%);
+    color: #0a0c0a; /* Dark text for high contrast readability */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(204, 255, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+/* Button hover effects */
+button:hover {
+    background: linear-gradient(135deg, #ddff33 0%, #ccff00 100%);
+    box-shadow: 0 6px 20px rgba(204, 255, 0, 0.3);
+}
